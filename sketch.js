@@ -27,6 +27,7 @@ var slide = 1;
 var moonRockCount = 0;
 var score = 0;
 
+
 // Load all assets for later use
 function preload() {
   arrow = loadImage("assets/arrow.png");
@@ -124,6 +125,7 @@ function draw() {
   }
 
   if(gameState == 2){
+    
     player.visible = true
     gameBgScroll.visible = true
 
@@ -151,8 +153,10 @@ function draw() {
       fill("white")
       stroke("black")
       strokeWeight(4)
-
-      text("You can also collect these!", moonRock.x, moonRock.y - 25)
+     
+        text("You can also collect these!", moonRock.x, moonRock.y - 25)
+   
+      
     }
 
     // Player movement
@@ -178,6 +182,7 @@ function draw() {
     gameBgScroll.visible = false
     gameBg.velocityX = 0;
     gameBg.x = width/2;
+  
 
     asteroidGrp.destroyEach();
     collectableGrp.destroyEach();
@@ -198,6 +203,8 @@ function draw() {
     textSize(35)
     strokeWeight(7)
     text("Press SPACE to play again", 600, 775)
+
+    
   }
 }
 
