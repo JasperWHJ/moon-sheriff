@@ -124,7 +124,6 @@ function draw() {
   }
 
   if(gameState == 2){
-    
     player.visible = true
     gameBgScroll.visible = true
 
@@ -200,6 +199,8 @@ function draw() {
     textSize(35)
     strokeWeight(7)
     text("Press SPACE to play again", 600, 775)
+    
+    score = 0
   }
 }
 
