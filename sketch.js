@@ -178,7 +178,6 @@ function draw() {
     gameBgScroll.visible = false
     gameBg.velocityX = 0;
     gameBg.x = width/2;
-    score = 0;
 
     asteroidGrp.destroyEach();
     collectableGrp.destroyEach();
