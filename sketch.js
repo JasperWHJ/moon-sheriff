@@ -199,8 +199,6 @@ function draw() {
     textSize(35)
     strokeWeight(7)
     text("Press SPACE to play again", 600, 775)
-    
-    score = 0
   }
 }
 
@@ -276,6 +274,7 @@ function keyReleased() {
   if(gameState == 3){
     if(keyCode == 32){
       gameState = 2;
+      score = 0;
     }
   }
 }
